@@ -8,6 +8,7 @@ const RandomAttributes = (props) => {
   let swapValue = 8;
   let swapState = false;
   let statName;
+  let selectedStat;
 
   const randomizeAttributes = () => {
     props.setHasStat(false);
@@ -176,6 +177,8 @@ const RandomAttributes = (props) => {
     swapStat = e.target.id;
     if (swapState == false) {
       statName = swapStat;
+      selectedStat = document.getElementById(swapStat);
+      selectedStat.classList.add("selectedStat");
       if (swapStat == "strength") {
         swapValue = props.strength;
       } else if (swapStat == "dexterity") {
@@ -191,6 +194,7 @@ const RandomAttributes = (props) => {
       }
       swapState = true;
     } else {
+      selectedStat.classList.remove("selectedStat");
       if (swapStat == "strength") {
         if (statName == "dexterity") {
           props.setDexterity(props.strength);
