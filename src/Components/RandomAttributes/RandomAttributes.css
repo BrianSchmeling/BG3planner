@@ -6,6 +6,23 @@
 
 #btnAndNumContainer {
   width: 25%;
+  height: 3rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.randomBtn {
+  width: 75%;
+  height: 75%;
+  margin: auto;
+  background: lightblue;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.points {
+  width: 75%;
+  height: 75%;
+  margin: auto;
+  font-size: 1rem;
 }
