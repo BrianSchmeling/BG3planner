@@ -300,7 +300,7 @@ const RandomAttributes = (props) => {
   };
 
   return (
-    <div>
+    <div className="container">
       <h1>Attributes</h1>
       {/* <button onClick={getAttributes}>click me!</button> */}
       <div id="btnAndNumContainer">
